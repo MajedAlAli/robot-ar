@@ -9,17 +9,17 @@
     <a-scene embedded arjs>
       <!-- Custom marker -->
       <a-marker type="pattern" url="your-marker.patt">
-        <!-- Cute robot model with spin animation -->
+        <!-- Cute robot model with spin animation, moved further away from the marker -->
         <a-entity 
           gltf-model="https://cdn.glitch.global/50c9f022-fd53-4ad5-89cd-2e17b37eb34f/robot.glb?v=1713195875321" 
           scale="0.5 0.5 0.5" 
           rotation="0 0 0"
           animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"
-          position="0 0 0">
+          position="0 0 1">  <!-- Increased the Z position to move it further out -->
         </a-entity>
 
-        <!-- Text instruction -->
-        <a-text value="Say hi to Robo!" position="0 1 0" align="center" scale="2 2 2" color="#00FFFF"></a-text>
+        <!-- Text instruction moved further up -->
+        <a-text value="Say hi to Robo!" position="0 1.5 0" align="center" scale="2 2 2" color="#00FFFF"></a-text>
       </a-marker>
 
       <!-- Camera -->
